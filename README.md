@@ -1,67 +1,53 @@
-# Health Prompt - Visual Studio Code Extension
+![Health Prompt Logo](images/Health prompt.jpg)
 
-![Health Prompt Logo](images/health-prompt-logo.png)
+# Health Prompt
 
-## Description
-
-Health Prompt is a Visual Studio Code extension designed to promote your well-being while coding. It helps you maintain a healthy work routine by providing timely reminders for essential activities such as taking breaks, staying hydrated, caring for your eyes, and even suggesting nutritious snack options.
+Health Prompt is a Visual Studio Code extension that promotes healthy habits for developers. It reminds you to take regular breaks, stay hydrated, look away to rest your eyes, take a walk, and have healthy snacks.
 
 ## Features
 
-- **Break Reminders**: Get regular prompts to take short breaks, stretch, and relax to reduce the risk of fatigue and improve focus.
-
-- **Hydration Reminders**: Stay hydrated by receiving timely reminders to drink water at regular intervals throughout your coding sessions.
-
-- **Eye Care Reminders**: Practice the 20-20-20 rule for eye health, reducing eye strain during long coding sessions.
-
-- **Nutrition Tips**: Receive occasional healthy eating tips and snack suggestions to fuel your productivity.
-
-- **Do Not Disturb Mode**: Toggle "Do Not Disturb" mode to pause notifications temporarily when you need uninterrupted concentration.
-
-- **Customizable Intervals**: Configure the intervals for each type of reminder to suit your preferences and work style.
-
-- **Minimalistic UI**: A small and unobtrusive status bar item for "Do Not Disturb" mode ensures a clutter-free workspace.
+- **Eye Health Reminders**: Follow the 20-20-20 rule to reduce eye strain.
+- **Break Reminders**: Reminders to take a short break from your work.
+- **Hydration Reminders**: Notifications to drink water at regular intervals.
+- **Walk Reminders**: Prompts to take a walk and stretch your legs.
+- **Nutrition Reminders**: Suggestions for healthy snacks during your coding session.
+- **Do Not Disturb Mode**: Toggle notifications on and off when you need to focus.
+- **Active Time Tracker**: Monitor the total time spent in VS Code.
 
 ## Usage
 
-1. **Installation**: Install the Health Prompt extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+After installing the extension, it will automatically start sending you notifications based on the default intervals. You can customize these intervals in the extension settings.
 
-2. **Configuration**: Tailor the extension to your needs by adjusting reminder intervals in the VS Code settings.
+To toggle the "Do Not Disturb" mode you can find it in the task bar menu of VS code. You can just toggle it according to your needs.
 
-3. **Stay Healthy**: Enjoy improved health and productivity with the help of timely reminders.
+## Installation
 
-## Configuration
+1. Open Visual Studio Code
+2. Press `Ctrl+P` to open the Quick Open dialog
+3. Type `ext install health-prompt` to find the extension
+4. Click the `Install` button, then the `Enable` button
 
-You can customize Health Prompt by modifying the following settings in your VS Code settings:
+## Extension Settings
 
-- `healthPrompt.eyeHealthInterval`: Set the interval in minutes for eye health reminders following the 20-20-20 rule.
+Use `Ctrl+Shift+P` and search for Preferences: Open settings (UI), once you are in search for Health prompt. Under Health prompt You can find options to customize the timer according to your needs.
 
-- `healthPrompt.breakInterval`: Define the interval in minutes for regular break reminders.
+This extension contributes the following settings:
 
-- `healthPrompt.hydrateInterval`: Specify the interval in minutes for hydration reminders.
+- `healthPrompt.eyeHealthInterval`: Interval in minutes for eye health reminders (default 20 minutes).
+- `healthPrompt.breakInterval`: Interval in minutes for regular break reminders (default 120 minutes).
+- `healthPrompt.hydrateInterval`: Interval in minutes for hydration reminders (default 60 minutes).
+- `healthPrompt.walkInterval`: Interval in minutes for walk reminders (default 30 minutes).
+- `healthPrompt.nutritionInterval`: Interval in minutes for nutrition reminders (default 90 minutes).
 
-- `healthPrompt.walkInterval`: Adjust the interval in minutes for walk reminders.
+You can configure these settings to meet your personal preferences.
 
-- `healthPrompt.nutritionInterval`: Configure the interval in minutes for nutrition tips.
+## Commands
 
-## Screenshots
+- `health-prompt.CodeWell`: Greet the user with a welcome message.
+- `health-prompt.toggleDoNotDisturb`: Toggle the "Do Not Disturb" mode.
 
-![Screenshot 1](images/screenshot1.png)
+## Feedback
 
-## Contributing
+If you have any feedback or issues, please open an issue in the [GitHub repository](https://github.com/deepakrajteekaraman5/CodeWell.git.)
 
-Contributions are welcome! If you have ideas for new features or improvements, please open an issue or submit a pull request. We appreciate your help in making Health Prompt better for the community.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support and Feedback
-
-- For bug reports or technical issues, please [open an issue](https://github.com/yourrepository/issues).
-
-- For feature requests and general feedback, feel free to [contact us](mailto:your.email@example.com).
-
----
-
-**Note**: This extension is provided as-is and is not a substitute for professional medical advice. Please consult with a healthcare professional for personalized health recommendations.
+**Enjoy a healthier coding experience!**

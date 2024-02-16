@@ -112,7 +112,7 @@ function activate(context) {
     }, 10000);
 
     let disposable = vscode.commands.registerCommand('health-prompt.CodeWell', function () {
-        vscode.window.showInformationMessage(`Hello ${userName} from CodeWell!`);
+        vscode.window.showInformationMessage(`Hello ${userName} from Health Prompt!`);
     });
 
     context.subscriptions.push(disposable, {

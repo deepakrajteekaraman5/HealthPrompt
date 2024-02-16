@@ -2,6 +2,8 @@
   "name": "health-prompt",
   "displayName": "Health Prompt",
   "description": "A VS Code extension to remind you to take breaks, hydrate, and care for your eyes.",
+  "publisher": "deepakrajteekaraman",
+  "icon": "images/Health prompt.png",
   "version": "0.0.1",
   "engines": {
       "vscode": "^1.85.0"
@@ -18,7 +20,7 @@
       "commands": [
           {
               "command": "health-prompt.CodeWell",
-              "title": "Code Well"
+              "title": "Health Prompt"
           },
           {
               "command": "health-prompt.toggleDoNotDisturb",

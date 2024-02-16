@@ -1,4 +1,4 @@
-![Health Prompt Logo](images/Health prompt.jpg)
+![Health Prompt Logo](images/Health-prompt.jpg)
 
 # Health Prompt
 

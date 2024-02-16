@@ -1,75 +1,79 @@
 {
-  "name": "health-prompt",
-  "displayName": "Health Prompt",
-  "description": "A VS Code extension to remind you to take breaks, hydrate, and care for your eyes.",
-  "publisher": "deepakrajteekaraman",
-  "icon": "images/Health prompt.png",
-  "version": "0.0.1",
-  "engines": {
+    "name": "health-prompt",
+    "displayName": "Health Prompt",
+    "description": "A VS Code extension to remind you to take breaks, hydrate, and care for your eyes.",
+    "publisher": "deepakrajteekaraman",
+    "icon": "images/Health-prompt.jpg",
+    "version": "0.0.1",
+    "engines": {
       "vscode": "^1.85.0"
-  },
-  "categories": [
+    },
+    "categories": [
       "Other"
-  ],
-  "activationEvents": [
+    ],
+    "activationEvents": [
       "onCommand:health-prompt.CodeWell",
       "onStartupFinished"
-  ],
-  "main": "./extension.js",
-  "contributes": {
+    ],
+    "main": "./extension.js",
+    "contributes": {
       "commands": [
-          {
-              "command": "health-prompt.CodeWell",
-              "title": "Health Prompt"
-          },
-          {
-              "command": "health-prompt.toggleDoNotDisturb",
-              "title": "Toggle Do Not Disturb"
-          }
+        {
+          "command": "health-prompt.CodeWell",
+          "title": "Health Prompt"
+        },
+        {
+          "command": "health-prompt.toggleDoNotDisturb",
+          "title": "Toggle Do Not Disturb"
+        }
       ],
       "configuration": {
-          "title": "Health Prompt",
-          "properties": {
-              "healthPrompt.eyeHealthInterval": {
-                  "type": "number",
-                  "default": 20,
-                  "description": "Interval in minutes for eye health reminders following the 20-20-20 rule."
-              },
-              "healthPrompt.breakInterval": {
-                  "type": "number",
-                  "default": 120,
-                  "description": "Interval in minutes for regular break reminders."
-              },
-              "healthPrompt.hydrateInterval": {
-                  "type": "number",
-                  "default": 60,
-                  "description": "Interval in minutes for hydration reminders."
-              },
-              "healthPrompt.walkInterval": {
-                  "type": "number",
-                  "default": 30,
-                  "description": "Interval in minutes for walk reminders."
-              },
-              "healthPrompt.nutritionInterval": {
-                  "type": "number",
-                  "default": 90,
-                  "description": "Interval in minutes for nutrition reminders."
-              }
+        "title": "Health Prompt",
+        "properties": {
+          "healthPrompt.eyeHealthInterval": {
+            "type": "number",
+            "default": 20,
+            "description": "Interval in minutes for eye health reminders following the 20-20-20 rule."
+          },
+          "healthPrompt.breakInterval": {
+            "type": "number",
+            "default": 120,
+            "description": "Interval in minutes for regular break reminders."
+          },
+          "healthPrompt.hydrateInterval": {
+            "type": "number",
+            "default": 60,
+            "description": "Interval in minutes for hydration reminders."
+          },
+          "healthPrompt.walkInterval": {
+            "type": "number",
+            "default": 30,
+            "description": "Interval in minutes for walk reminders."
+          },
+          "healthPrompt.nutritionInterval": {
+            "type": "number",
+            "default": 90,
+            "description": "Interval in minutes for nutrition reminders."
           }
+        }
       },
       "statusBar": {
-          "health-prompt.toggleDoNotDisturb": {
-              "text": "Do Not Disturb: Off",
-              "tooltip": "Toggle Do Not Disturb"
-          }
+        "health-prompt.toggleDoNotDisturb": {
+          "text": "Do Not Disturb: Off",
+          "tooltip": "Toggle Do Not Disturb"
+        }
       }
-  },
-  "scripts": {
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/deepakrajteekaraman5/HealthPrompt.git"
+    },
+    "scripts": {
       "lint": "eslint .",
       "pretest": "npm run lint",
       "test": "vscode-test"
-  },
-  "devDependencies": {
+    },
+    "devDependencies": {
       "@types/vscode": "^1.85.0",
       "@types/mocha": "^10.0.6",
       "@types/node": "18.x",
@@ -77,5 +81,6 @@
       "typescript": "^5.3.3",
       "@vscode/test-cli": "^0.0.4",
       "@vscode/test-electron": "^2.3.8"
+    }
   }
-}
+  

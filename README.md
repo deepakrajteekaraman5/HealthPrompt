@@ -20,6 +20,10 @@ After installing the extension, it will automatically start sending you notifica
 
 To toggle the "Do Not Disturb" mode you can find it in the task bar menu of VS code. You can just toggle it according to your needs.
 
+## Pre-requsites
+
+VS Code
+
 ## Installation
 
 1. Open Visual Studio Code
@@ -38,6 +42,8 @@ This extension contributes the following settings:
 - `healthPrompt.hydrateInterval`: Interval in minutes for hydration reminders (default 60 minutes).
 - `healthPrompt.walkInterval`: Interval in minutes for walk reminders (default 30 minutes).
 - `healthPrompt.nutritionInterval`: Interval in minutes for nutrition reminders (default 90 minutes).
+
+![Health prompt](https://github.com/deepakrajteekaraman5/HealthPrompt/assets/148942635/58bae58f-e02f-40aa-804f-ad88bbb06616)
 
 You can configure these settings to meet your personal preferences.
 
